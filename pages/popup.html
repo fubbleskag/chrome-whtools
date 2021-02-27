@@ -1,0 +1,222 @@
+<html>
+	<head>
+		<script type="text/javascript" src="../scripts/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="../scripts/rolling-instructions.js"></script>
+		<link rel="stylesheet" type="text/css" href="../styles/popup.css">
+		<link rel="stylesheet" type="text/css" href="../styles/rolling-instructions.css">
+	</head>
+	<body>
+		<section id="rolling-instructions">
+			<p>
+				<label for="size">Mass of the wormhole</label>
+				<select class="parms" name="size">
+					<option value=""></option>
+					<optgroup label="By mass...">
+						<option value="1b">1b</option>
+						<option value="2b">2b</option>
+						<option value="3b">3b</option>
+						<option value="33b">3.3b</option>
+					</optgroup>
+					<optgroup label="By type...">
+						<option value="2b">A239</option>
+						<option value="2b">A641</option>
+						<option value="3b">A982</option>
+						<option value="3b">B041</option>
+						<option value="2b">B274</option>
+						<option value="2b">B449</option>
+						<option value="3b">B520</option>
+						<option value="3b">C140</option>
+						<option value="2b">C247</option>
+						<option value="3b">C248</option>
+						<option value="3b">C391</option>
+						<option value="1b">C729</option>
+						<option value="1b">D364</option>
+						<option value="2b">D382</option>
+						<option value="3b">D792</option>
+						<option value="2b">E175</option>
+						<option value="2b">E545</option>
+						<option value="3b">E587</option>
+						<option value="1b">F216</option>
+						<option value="2b">G024</option>
+						<option value="33b">H296</option>
+						<option value="3b">H900</option>
+						<option value="2b">I182</option>
+						<option value="1b">J244</option>
+						<option value="3b">K346</option>
+						<option value="3b">L031</option>
+						<option value="2b">L477</option>
+						<option value="1b">L614</option>
+						<option value="2b">M164</option>
+						<option value="1b">M267</option>
+						<option value="3b">M555</option>
+						<option value="3b">N062</option>
+						<option value="3b">N290</option>
+						<option value="3b">N432</option>
+						<option value="2b">N766</option>
+						<option value="3b">N770</option>
+						<option value="3b">N944</option>
+						<option value="2b">N968</option>
+						<option value="1b">O128</option>
+						<option value="2b">O477</option>
+						<option value="3b">R051</option>
+						<option value="1b">R081</option>
+						<option value="3b">R474</option>
+						<option value="3b">S047</option>
+						<option value="3b">S199</option>
+						<option value="2b">T405</option>
+						<option value="3b">U210</option>
+						<option value="3b">U319</option>
+						<option value="1b">U372</option>
+						<option value="3b">U574</option>
+						<option value="3b">V283</option>
+						<option value="33b">V753</option>
+						<option value="2b">V898</option>
+						<option value="33b">V911</option>
+						<option value="33b">W237</option>
+						<option value="1b">X450</option>
+						<option value="1b">X702</option>
+						<option value="2b">X877</option>
+						<option value="2b">Y683</option>
+						<option value="3b">Z142</option>
+						<option value="2b">Z457</option>
+					</optgroup>
+				</select>
+			</p>
+			<p>
+				<label for="method">Are you rolling solo or one-shotting?</label>
+				<select class="parms" name="method">
+					<option value=""></option>
+					<option value="solo">solo</option>
+					<option value="shot">one-shot</option>
+				</select>
+			</p>
+			<p>
+				<label for="goal">Are you wanting to roll or crit the hole?</label>
+				<select class="parms" name="goal">
+					<option value=""></option>
+					<option value="roll">roll</option>
+					<option value="crit">crit</option>
+				</select>
+			</p>
+			<section id="instructions">
+				<section class="instructions 1b solo roll">
+					<ul>
+						<li>1 COLD, 3 HOT</li>
+					</ul>
+				</section>
+				<section class="instructions 1b solo crit">
+					<ul>
+						<li>1x COLD/HOT</li>
+						<li>Reduced: 1x COLD/COLD</li>
+						<li>Not Reduced: 1x COLD/HOT</li>
+					</ul>
+				</section>
+				<section class="instructions 1b shot roll">
+					<ul>
+						<li>Rollers: 2</li>
+						<li>1 COLD, 1 HOT</li>
+						<li>2 HOT</li>
+					</ul>
+				</section>
+				<section class="instructions 1b shot crit">
+					<ul>
+						<li>Rollers: 2</li>
+						<li>1 COLD, 1 HOT</li>
+						<li>Reduced: 2 COLD</li>
+						<li>Not Reduced: 1 COLD, 1 HOT</li>
+					</ul>
+				</section>
+				<section class="instructions 2b solo roll">
+					<ul>
+						<li>2x COLD/HOT</li>
+						<li>Reduced: 2x COLD/HOT</li>
+						<li>Not Reduced: 2x HOT/HOT</li>
+					</ul>
+				</section>
+				<section class="instructions 2b solo crit">
+					<ul>
+						<li>2x COLD/HOT</li>
+						<li>Reduced: 2x COLD/COLD</li>
+						<li>Not Reduced: 2x COLD/HOT</li>
+					</ul>
+				</section>
+				<section class="instructions 2b shot roll">
+					<ul>
+						<li>Rollers: 4</li>
+						<li>2 COLD, 2 HOT</li>
+						<li>Reduced: 2 COLD, 2 HOT</li>
+						<li>Not Reduced: 4 HOT</li>
+					</ul>
+				</section>
+				<section class="instructions 2b shot crit">
+					<ul>
+						<li>Rollers: 4</li>
+						<li>2 COLD, 2 HOT</li>
+						<li>Reduced: 4 COLD</li>
+						<li>Not Reduced: 2 COLD, 2 HOT</li>
+					</ul>
+				</section>
+				<section class="instructions 3b solo roll">
+					<ul>
+						<li>5x HOT</li>
+						<li>Reduced: 5x HOT</li>
+						<li>Not Reduced: 3x COLD, 4x HOT</li>
+					</ul>
+				</section>
+				<section class="instructions 3b solo crit">
+					<ul>
+						<li>5x HOT</li>
+						<li>Reduced: 3x COLD, 2x HOT</li>
+						<li>Not Reduced: 5x HOT</li>
+					</ul>
+				</section>
+				<section class="instructions 3b shot roll">
+					<ul>
+						<li>Rollers: 6</li>
+						<li>3x COLD, 3x HOT</li>
+						<li>Reduced: 3x COLD, 3x HOT</li>
+						<li>Not Reduced: 6x HOT</li>
+					</ul>
+				</section>
+				<section class="instructions 3b shot crit">
+					<ul>
+						<li>Rollers: 6</li>
+						<li>3x COLD, 3x HOT</li>
+						<li>Reduced: 6x COLD</li>
+						<li>Not Reduced: 3x COLD, 3x HOT</li>
+					</ul>
+				</section>
+				<section class="instructions 33b solo roll">
+					<ul>
+						<li>1x COLD, 5x HOT</li>
+						<li>Reduced: 2x COLD, 4x HOT</li>
+						<li>Not Reduced: 6x HOT</li>
+					</ul>
+				</section>
+				<section class="instructions 33b solo crit">
+					<ul>
+						<li>1x COLD, 5x HOT</li>
+						<li>Reduced: 4x HOT (may need a HIC)</li>
+						<li>Not Reduced: 1x COLD, 5x HOT</li>
+					</ul>
+				</section>
+				<section class="instructions 33b shot roll">
+					<ul>
+						<li>Rollers: 6</li>
+						<li>1x COLD, 5x HOT</li>
+						<li>Reduced: 2x COLD, 4x HOT</li>
+						<li>Not Reduced: 6x HOT</li>
+					</ul>
+				</section>
+				<section class="instructions 33b shot crit">
+					<ul>
+						<li>Rollers: 6</li>
+						<li>1x COLD, 5x HOT</li>
+						<li>Reduced: 6x COLD (may need a HIC)</li>
+						<li>Not Reduced: 1x COLD, 5x HOT</li>
+					</ul>
+				</section>
+			</section>
+		</section>
+	</body>
+</html>

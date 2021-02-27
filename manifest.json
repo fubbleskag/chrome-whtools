@@ -1,0 +1,16 @@
+{
+	"manifest_version": 3,
+	"name": "WH Tools",
+	"version": "1.0",
+	"author": "fubbleskag",
+	"icons": {
+		"32": "images/1f534.png"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+	"action": {
+		"default_title": "WH Tools",
+		"default_popup": "pages/popup.html"
+	}
+}
